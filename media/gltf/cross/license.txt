@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low Poly Cross (Downloadable)
+* source:	https://sketchfab.com/3d-models/low-poly-cross-downloadable-c0e477f21db740448b2f1abde7552d8a
+* author:	3dsauce (https://sketchfab.com/3dsauce)
+
+Model License:
+* license type:	CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions can not be distributed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low Poly Cross (Downloadable)" (https://sketchfab.com/3d-models/low-poly-cross-downloadable-c0e477f21db740448b2f1abde7552d8a) by 3dsauce (https://sketchfab.com/3dsauce) licensed under CC-BY-NC-ND-4.0 (http://creativecommons.org/licenses/by-nc-nd/4.0/)

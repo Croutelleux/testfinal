@@ -247,10 +247,27 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       camera-controls
       touch-action="pan-y"
     ></model-viewer>
-    <form>
-      <input type="file" name="avatar"
-      accept="model/gltf" multiple=”false”>
-      <button type="submit">Valider</button>
-      </form>
+    <script>
+      const output = document.getElementById('output');
+      const filepicker = document.getElementById('filepicker');
+
+filepicker.addEventListener('change', (event) => {
+  const files = event.target.files;
+  output.textContent = '';
+
+  for (const file of files) {
+    const li = document.createElement('li');
+    li.textContent = file.name;
+    output.appendChild(li);
+  }
+})
+
+    </script>
+    <input type="file" id="filepicker" multiple />
+    <div>
+      <p>List of selected files:</p>
+      <ul id="output"></ul>
+    </div>
+    
   </body>
 </html>

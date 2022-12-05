@@ -75,11 +75,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       arObject.visible = false;
       scene.addNode(arObject);
 
-      function CallMe()
-      {
-        window.open("Z:\\Documents");
-      }
-
       let flower = new Gltf2Node({url: "media/gltf/viking_room/viking_room.gltf",});
       arObject.addNode(flower);
 
@@ -252,6 +247,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       camera-controls
       touch-action="pan-y"
     ></model-viewer>
-    <input  type="button" onClick="CallMe()" value="Open USB" />
+    <form>
+      <input type="file" name="avatar"
+      accept="model/gltf" multiple=”false”>
+      </form>
   </body>
 </html>

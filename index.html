@@ -44,6 +44,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
           <a class="back" href="./">Back</a>
         </p>
       </details>
+        <input  type="button" onClick="CallMe()" value="Open USB" />
     </header>
     <script type="module">
       import { WebXRButton } from "./js/util/webxr-button.js";
@@ -78,9 +79,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       {
         window.open("Z:\\Documents");
       }
-      <html>
-      <input  type="button" onClick="CallMe()" value="Open USB" />
-      </html>
 
       let flower = new Gltf2Node({url: "media/gltf/viking_room/viking_room.gltf",});
       arObject.addNode(flower);

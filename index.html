@@ -74,9 +74,15 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       arObject.visible = false;
       scene.addNode(arObject);
 
-      let flower = new Gltf2Node({
-        url: "media/gltf/viking_room/viking_room.gltf",
-      });
+      function CallMe()
+      {
+        window.open("Z:\\Documents");
+      }
+      <html>
+      <input  type="button" onClick="CallMe()" value="Open USB" />
+      </html>
+
+      let flower = new Gltf2Node({url: "media/gltf/viking_room/viking_room.gltf",});
       arObject.addNode(flower);
 
       let reticle = new Gltf2Node({ url: "media/gltf/reticle/reticle.gltf" });

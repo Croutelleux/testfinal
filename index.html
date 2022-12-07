@@ -236,18 +236,30 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     <!-- Import the component -->
     <script
       type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+      src= "inputValue"
     ></script>
 
     <!-- Use it like any other HTML element -->
     <model-viewer
       alt="Viking room"
-      src="https://sketchfab.com/models/7772e527437448f1a7453a2e35e6d9d1"
+      src="maVariable"
       shadow-intensity="1"
       camera-controls
       touch-action="pan-y"
     ></model-viewer>
+
     <script>
+      document.getElementById('monForm').addEventListener("submit",
+      function(){
+        var inputValue = docuement.getElementById("monInput").value;
+        var maVariable = inputValue;
+      }
+      );
+
+    </script>
+    
+    
+    <!-- <script>
       const output = document.getElementById('output');
       const filepicker = document.getElementById('filepicker');
 
@@ -262,12 +274,8 @@ filepicker.addEventListener('change', (event) => {
   }
 })
 
-    </script>
-    <input type="file" id="filepicker" multiple />
-    <div>
-      <p>List of selected files:</p>
-      <ul id="output"></ul>
-    </div>
-    
+    </script>  -->
+    <input type="text" id="monForm"/>
+    <button type="submit">Envoyer</button>
   </body>
 </html>

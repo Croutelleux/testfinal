@@ -30,21 +30,11 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png" />
-    <link rel="stylesheet" href="css/common.css" />
 
     <title>Hit Test</title>
   </head>
   <body>
     <header>
-      <details open>
-        <summary>Hit Test</summary>
-        <p>
-          This sample demonstrates use of hit testing to place virtual objects
-          on real-world surfaces.
-          <a class="back" href="./">Back</a>
-        </p>
-      </details>
-        
     </header>
     <script type="module">
       import { WebXRButton } from "./js/util/webxr-button.js";
@@ -75,7 +65,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       arObject.visible = false;
       scene.addNode(arObject);
 
-      let flower = new Gltf2Node({url: "https://cdn.glitch.com/0fc2d138-1979-4b80-8bae-51eb67b7ccb9%2Fsheep.glb?1544159918188",});
+      let flower = new Gltf2Node({url: "media/gltf/chair/chair.gltf",});
       arObject.addNode(flower);
 
       let reticle = new Gltf2Node({ url: "media/gltf/reticle/reticle.gltf" });
@@ -233,49 +223,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       initXR();
     </script>
 
-    <!-- Import the component -->
-    <script
-      type="module"
-      src= "inputValue"
-    ></script>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
-    <!-- Use it like any other HTML element -->
-    <model-viewer
-      alt="Viking room"
-      src="maVariable"
-      shadow-intensity="1"
-      camera-controls
-      touch-action="pan-y"
-    ></model-viewer>
 
-    <script>
-      document.getElementById('monForm').addEventListener("submit",
-      function(){
-        var inputValue = docuement.getElementById("monInput").value;
-        var maVariable = inputValue;
-      }
-      );
-
-    </script>
-    
-    
-    <!-- <script>
-      const output = document.getElementById('output');
-      const filepicker = document.getElementById('filepicker');
-
-filepicker.addEventListener('change', (event) => {
-  const files = event.target.files;
-  output.textContent = '';
-
-  for (const file of files) {
-    const li = document.createElement('li');
-    li.textContent = file.name;
-    output.appendChild(li);
-  }
-})
-
-    </script>  -->
-    <input type="text" id="monForm"/>
-    <button type="submit">Envoyer</button>
-  </body>
+<model-viewer src="media/gltf/chair/chair.gltf" ios-src="media/gltf/chair/chair.gltf" alt="A 3D model of a chair" ar camera-controls></model-viewer>
+	
 </html>
